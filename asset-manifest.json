@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TweeDeck/static/css/main.506a2192.css",
+    "main.js": "/TweeDeck/static/js/main.b80c5744.js",
+    "static/js/787.c9ac42a8.chunk.js": "/TweeDeck/static/js/787.c9ac42a8.chunk.js",
+    "index.html": "/TweeDeck/index.html",
+    "main.506a2192.css.map": "/TweeDeck/static/css/main.506a2192.css.map",
+    "main.b80c5744.js.map": "/TweeDeck/static/js/main.b80c5744.js.map",
+    "787.c9ac42a8.chunk.js.map": "/TweeDeck/static/js/787.c9ac42a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.506a2192.css",
+    "static/js/main.b80c5744.js"
+  ]
+}
