@@ -1,20 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
 .App {
     text-align: center;
-}
-
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
 }
 
 input {
@@ -32,29 +19,31 @@ input {
     margin-top: -0.5rem;
 }
 
-.App {
-    background-color: #00d5ff9f;
+.TwHeader {
+    text-decoration: none;
 }
 
-/* 
-.App {
-  background: rgb(0,212,255);
-  background: linear-gradient(0deg, rgba(0,212,255,1) 0%, rgba(255,255,255,1) 100%);
-  background-repeat: no-repeat;
-} */
-
 li {
-    background-color: aliceblue;
-    margin: 1rem 40rem 1rem 40rem;
-    padding: 5rem 0rem 5rem 0rem;
-    text-decoration: none;
-    display: inline-block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2rem;
+    color: #111010;
+    display: inline;
+    padding: 0.5rem 2rem 0rem 2rem;
+}
+
+ul {
+    background-color: #00d5ff;
+    list-style-type: none;
+    margin: 0rem;
+    padding: 1rem 2rem 5rem 2rem;
 }
 
 span {
     margin: 1rem;
 }
 
-ul {
-    text-decoration: none;
+.SearchOpt-Style {
+    padding: 1.5rem;
+    margin: 1.5rem;
+    font-size: 1.5rem;
 }
