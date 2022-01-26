@@ -1,0 +1,14 @@
+{
+    "name": "TweeDeck",
+    "short_name": "Twitter seach tool. Provides posts from recent posts relating to a specific hashtag ",
+    "icons": [
+        {
+            "src": "/android-chrome-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#00D5FF",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

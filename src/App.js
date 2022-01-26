@@ -1,47 +1,61 @@
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
+
+import HomePageTab from './components/HomePageTab'
+import TrendingTab from './components/TrendingTab'
+import NewsTab from './components/NewsTab'
+import SportsTab from './components/SportsTab'
+import EntertainmentTab from './components/EntertainmentTab'
+import SearchTab from './components/SearchTab'
+
 import './App.css'
-import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
     return (
         <div className="App">
             <header>
-                <h1 className="title">TweeDeck</h1>
-                <form>
-                    <input placeholder="search for a new hashtag here" />
-                    <button>Search hashtag</button>
-                </form>
-                <span></span>
+                <BrowserRouter>
+                    <ul>
+                        <Link to="/TrendingTab">
+                            <li>TrendingTab</li>
+                        </Link>
+                        <Link to="/NewsTab">
+                            <li>NewsTab</li>
+                        </Link>
+
+                        <Link to="/HomePageTab">
+                            <li className="title TwHeader">
+                                <strong>TweeDeck</strong>
+                            </li>
+                        </Link>
+
+                        <Link to="/SportsTab">
+                            <li>SportsTab</li>
+                        </Link>
+
+                        <Link to="/EntertainmentTab">
+                            <li>EntertainmentTab</li>
+                        </Link>
+                        <Link to="/SearchTab">
+                            <li>SearchTab</li>
+                        </Link>
+                    </ul>
+
+                    <Routes>
+                        <Route path="/TrendingTab" element={<TrendingTab />} />
+                        <Route path="/NewsTab" element={<NewsTab />} />
+
+                        <Route path="/SportsTab" element={<SportsTab />} />
+                        <Route
+                            path="/EntertainmentTab"
+                            element={<EntertainmentTab />}
+                        />
+
+                        <Route path="/SearchTab" element={<SearchTab />} />
+                        <Route path="/HomePageTab" element={<HomePageTab />} />
+                    </Routes>
+                </BrowserRouter>
             </header>
-            <div>
-                <ul className="row">
-                    <li className="col">
-                        <span>
-                            <p>lipsum lipsum lipsum lipsum</p>
-                        </span>
-
-                        <span>{0} Likes</span>
-                        <span>{0} Retweets</span>
-                    </li>
-
-                    <li className="col">
-                        <span>
-                            <p>lipsum lipsum lipsum lipsum</p>
-                        </span>
-
-                        <span>{0} Likes</span>
-                        <span>{0} Retweets</span>
-                    </li>
-
-                    <li className="col">
-                        <span>
-                            <p>lipsum lipsum lipsum lipsum</p>
-                        </span>
-
-                        <span>{0} Likes</span>
-                        <span>{0} Retweets</span>
-                    </li>
-                </ul>
-            </div>
         </div>
     )
 }

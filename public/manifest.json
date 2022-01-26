@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "TweeDeck",
+  "name": "Twitter seach tool. Provides posts from recent posts relating to a specific hashtag ",
   "icons": [
     {
       "src": "favicon.ico",
